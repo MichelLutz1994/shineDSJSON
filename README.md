@@ -1,4 +1,6 @@
 # shineDSJSON
+
+## Description
 shineDSJSON is a lightwight dataset-json viewer, realised as R Shiny APP (https://shiny.rstudio.com/). The app parses dataset-json files with the 
 R4DSJSON package developed from Ippei Akiya (https://github.com/i-akiya/R4DSJSON). 
 
