@@ -3,7 +3,9 @@ pacman::p_load(devtools, tidyverse, DT, shiny, shinyWidgets, readr)
 install_github("i-akiya/R4DSJSON", quiet=TRUE)
 pacman::p_load(R4DSJSON)
 
-urldm = "https://raw.githubusercontent.com/cdisc-org/DataExchange-DatasetJson/master/examples/sdtm/dm.json"
+#set current working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+source("table_style.R")
 
 
 # Define UI for miles per gallon app ----
@@ -63,11 +65,16 @@ server <- function(input, output) {
       return (matrix("Load a correct dataset-json file",1,1))
     }
     
-    return(datatable(
-      df(),
-      class = "cell-border",
-      filter = list(position = 'top', clear = FALSE)
-    ))
+    as.data.frame(df()) %>%
+      datatable(
+        class = c("cell-border", "compact", "hover"),
+        options = table_options(),
+        escape = FALSE,
+        #container = table_frame(),
+        filter = list(position = 'top', clear = FALSE),
+        extensions = 'Buttons'
+      )
+    
   })
   
   
