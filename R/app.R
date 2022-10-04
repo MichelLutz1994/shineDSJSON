@@ -130,7 +130,7 @@ server <- function(input, output) {
 }
 
 
-#' shinyDSJSON
+#' RunViewer
 #' @return shiny.appobj object
 #' @examples 
 #' library(devtools)
@@ -138,10 +138,10 @@ server <- function(input, output) {
 #' 
 #' shineDSJSON::shinyDSJSON()
 #' 
-shinyDSJSON <- function(){
+RunViewer <- function(){
   print("Run shinyDSJSON")
   shinyApp(ui, server)
 }
 
-shinyDSJSON()
+RunViewer()
 
