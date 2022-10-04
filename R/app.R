@@ -3,7 +3,9 @@ pacman::p_load(devtools, tidyverse, DT, shiny, shinyWidgets, readr)
 install_github("i-akiya/R4DSJSON", quiet=TRUE)
 pacman::p_load(R4DSJSON)
 
-
+#' table_options
+#' @examples 
+#' do not use, this function is for internal use only
 #create datatable options for layout
 table_options <- function() {
   list(
@@ -51,7 +53,9 @@ table_options <- function() {
   )
 }
 
-
+#' ui
+#' @examples 
+#' do not use, this function is for internal use only
 # Define UI for miles per gallon app ----
 ui <- navbarPage("shineDSJSON",
                  
@@ -84,7 +88,12 @@ ui <- navbarPage("shineDSJSON",
 
 
 
-
+#' server
+#' @export
+#' @param input see shiny doc
+#' @param output see shiny doc
+#' @examples 
+#' do not use, this function is for internal use only
 # Define server logic to plot various variables against mpg ----
 server <- function(input, output) {
   
@@ -121,7 +130,14 @@ server <- function(input, output) {
 }
 
 
-#run app
+#' shinyDSJSON
+#' @return shiny.appobj object
+#' @examples 
+#' library(devtools)
+#' install_github("MichelLutz1994/shineDSJSON")
+#' 
+#' shineDSJSON::shinyDSJSON()
+#' 
 shinyDSJSON <- function(){
   print("Run shinyDSJSON")
   shinyApp(ui, server)
