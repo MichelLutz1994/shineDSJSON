@@ -1,25 +1,4 @@
 
-table_frame <-
-  function() {
-    htmltools::withTags(table(class = 'display',
-                              thead(
-                                tr(
-                                  th(rowspan = 2, 'Latitude'),
-                                  th(rowspan = 2, 'Longitude'),
-                                  th(rowspan = 2, 'Month'),
-                                  th(rowspan = 2, 'Year'),
-                                  th(class = 'dt-center', colspan = 3, 'Cloud'),
-                                  th(rowspan = 2, 'Ozone'),
-                                  th(rowspan = 2, 'Pressure'),
-                                  th(rowspan = 2, 'Surface Temperature'),
-                                  th(rowspan = 2, 'Temperature'),
-                                  tr(lapply(rep(
-                                    c('High', 'Low', 'Mid'), 1
-                                  ), th))
-                                )
-                              )))
-  }
-
 
 table_options <- function() {
   list(
@@ -49,9 +28,10 @@ table_options <- function() {
     ),
     deferRender = TRUE,
     lengthMenu = list(c(10, 20,-1), c('10', '20', 'All')),
-    searching = TRUE,
+    search = list(regex=TRUE, caseInsensitiv = FALSE),
     editable = FALSE,
     scroller = TRUE,
+    responsive = TRUE,
     lengthChange = TRUE
     ,
     initComplete = JS(
