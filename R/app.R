@@ -138,10 +138,10 @@ server <- function(input, output) {
 #' 
 #' shineDSJSON::shinyDSJSON()
 #' 
-RunViewer <- function(){
+runViewer <- function(){
   print("Run shinyDSJSON")
   shinyApp(ui, server)
 }
 
-RunViewer()
+runViewer()
 
