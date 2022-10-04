@@ -2,7 +2,7 @@ Package: shineDSJSON
 Type: Package
 Title: Dataset-Json viewer
 Author: Michel Lutz
-Version: 0.1.0.0
+Version: 0.1.1.0
 Date: 04/10/2022
 RoxygenNote: 7.2.0
 Description: Viewer for dataset JSON.
