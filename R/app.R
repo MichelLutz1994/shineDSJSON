@@ -143,5 +143,5 @@ runViewer <- function(){
   shinyApp(ui, server)
 }
 
-runViewer()
+#runViewer()
 
