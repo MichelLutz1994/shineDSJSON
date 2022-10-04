@@ -131,6 +131,7 @@ server <- function(input, output) {
 
 
 #' RunViewer
+#' @export
 #' @return shiny.appobj object
 #' @examples 
 #' library(devtools)
