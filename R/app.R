@@ -68,8 +68,9 @@ server <- function(input, output) {
     as.data.frame(df()) %>%
       datatable(
         class = c("cell-border", "compact", "hover"),
+        searchDelay = 500, 
         options = table_options(),
-        escape = FALSE,
+        escape = TRUE,
         #container = table_frame(),
         filter = list(position = 'top', clear = FALSE),
         extensions = 'Buttons'
