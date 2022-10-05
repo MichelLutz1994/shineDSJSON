@@ -10,17 +10,16 @@ This project is developed and released during the CDISC Dataset-JSON Hackathon 2
 This project works on R version 4.2.1, previous versions may not work. Moreover this projects needs devtools installed. If you call the viewer the first time it will install a few more packages.
 
 ## How to use
-Call:
 
-\# necessary if devtools are not already installed
-library(pacman)
-pacman::p_load(devtools)
+\#necessary if devtools are not already installed <br />
+library(pacman) <br />
+pacman::p_load(devtools) <br />
 
-\# install shineDSJSON from github
-install_github("MichelLutz1994/shineDSJSON", force=TRUE)
+\# install shineDSJSON from github <br />
+install_github("MichelLutz1994/shineDSJSON") <br />
 library(shineDSJSON)
 
-\# run viewer, may install some packages by the first call
+\# run viewer, may install some packages at the first run <br />
 shineDSJSON::runViewer()
 
 ## Contribution
