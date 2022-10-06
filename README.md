@@ -29,10 +29,15 @@ shineDSJSON::runViewer()
 ## Examples
 Load DS JSON file from local or remote source:
 
-![This is an image](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/load_screen.PNG)
+![load data](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/load_screen.PNG)
 
+Load the table by pushing the load button and switch to the show register:
 
+![show data](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/table_view.PNG)
 
+Search the table using regex:
+
+![search in data](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/search_regex.PNG)
 
 ## Contribution
 Feel free to uses this code snippes in every way possible. 
