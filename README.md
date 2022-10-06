@@ -8,7 +8,7 @@ This project is developed and released during the CDISC Dataset-JSON Hackathon 2
 
 DS JSON files can be loaded from remote via URL or from a local source.
 
-The app supports independent regex search in each column and the whole file as well es exporting the table as csv and excel file. Moreover the file can be printed out, respecting the current search. 
+The app supports independent regex search in each column and the whole file as well as exporting the table as csv or excel file. Moreover the file can be printed out, respecting the current search. 
 
 ## Dependencies 
 This project works on R version 4.2.1, previous versions may not work. Moreover this projects needs devtools installed. If you call the viewer the first time it will install a few more packages.
@@ -38,6 +38,7 @@ Load the table by pushing the load button and switch to the show register:
 Search the table using regex:
 
 ![search in data](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/search_regex.PNG)
+
 
 ## Contribution
 Feel free to uses this code snippes in every way possible. 
