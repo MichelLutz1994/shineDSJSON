@@ -6,6 +6,10 @@ R4DSJSON package developed from Ippei Akiya (https://github.com/i-akiya/R4DSJSON
 
 This project is developed and released during the CDISC Dataset-JSON Hackathon 2022. The main purpuse is to demonstrate how easy it is to create tools for visualising dataset-json files. 
 
+DS JSON files can be loaded from remote via URL or from a local source.
+
+The app supports independent regex search in each column and the whole file as well es exporting the table as csv and excel file. Moreover the file can be printed out, respecting the current search. 
+
 ## Dependencies 
 This project works on R version 4.2.1, previous versions may not work. Moreover this projects needs devtools installed. If you call the viewer the first time it will install a few more packages.
 
@@ -21,6 +25,14 @@ library(shineDSJSON)
 
 \# run viewer, may install some packages at the first run <br />
 shineDSJSON::runViewer()
+
+## Examples
+Load DS JSON file from local or remote source:
+
+![This is an image](https://github.com/MichelLutz1994/shineDSJSON/blob/main/screenshots/load_screen.PNG)
+
+
+
 
 ## Contribution
 Feel free to uses this code snippes in every way possible. 
