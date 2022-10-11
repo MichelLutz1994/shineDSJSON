@@ -4,6 +4,6 @@ Title: Dataset-Json viewer
 Author: Michel Lutz
 Version: 0.1.1.0
 Date: 04/10/2022
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 Description: Viewer for dataset JSON.
-Imports: devtools, tidyverse, shiny, shinyWidgets, readr, DT 
+Imports: tidyverse, shiny, shinyWidgets, readr, DT 
