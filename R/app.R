@@ -1,14 +1,15 @@
-#' shinyDSJSON
+#' shineDSJSON
 #' @export
 #' @return shiny.appobj object
 #' @examples 
 #' library(devtools)
 #' install_github("MichelLutz1994/shineDSJSON")
+#' library(shineDSJSON)
 #' 
-#' shineDSJSON::shinyDSJSON()
+#' shineDSJSON::runViewer()
 #' 
 runViewer <- function(){
-  print("Run shinyDSJSON")
+  print("Run shineDSJSON")
   
   library(pacman)
   pacman::p_load(tidyverse, shiny, shinyWidgets, readr, DT)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/app.R
 \name{runViewer}
 \alias{runViewer}
-\title{shinyDSJSON}
+\title{shineDSJSON}
 \usage{
 runViewer()
 }
@@ -10,12 +10,13 @@ runViewer()
 shiny.appobj object
 }
 \description{
-shinyDSJSON
+shineDSJSON
 }
 \examples{
 library(devtools)
 install_github("MichelLutz1994/shineDSJSON")
+library(shineDSJSON)
 
-shineDSJSON::shinyDSJSON()
+shineDSJSON::runViewer()
 
 }
