@@ -13,8 +13,8 @@ runViewer <- function(){
   library(pacman)
   pacman::p_load(tidyverse, shiny, shinyWidgets, readr, DT)
   
-  load_all("R/formats.R")
-  load_all("R/util.R")
+  #load_all("R/formats.R")
+  #load_all("R/util.R")
 
   
   # Define UI for miles per gallon app ----
