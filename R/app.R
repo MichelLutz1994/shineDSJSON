@@ -9,7 +9,7 @@
 #' shineDSJSON::runViewer()
 #' 
 runViewer <- function(){
-  print("Run shineDSJSON")
+  print("Run shineDSJSON...")
   
   library(pacman)
   pacman::p_load(tidyverse, shiny, shinyWidgets, readr, DT)
