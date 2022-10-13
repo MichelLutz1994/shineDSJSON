@@ -60,7 +60,7 @@ runViewer <- function(){
         json_file <- RCurl::getURL(input$url)
       }
       
-      df <- shinyDSJSON::read_ds_json(json_file)
+      df <- shineDSJSON::read_ds_json(json_file)
       
       return(df)
     })
@@ -74,7 +74,7 @@ runViewer <- function(){
       as.data.frame(df()) %>%
         datatable(
           class = c("cell-border", "compact", "hover"),
-          options = shinyDSJSON::table_options(),
+          options = shineDSJSON::table_options(),
           escape = TRUE,
           #container = table_frame(),
           filter = list(position = 'top', clear = FALSE),
