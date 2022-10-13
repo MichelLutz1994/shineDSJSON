@@ -7,3 +7,4 @@ Date: 04/10/2022
 RoxygenNote: 7.2.1
 Description: Viewer for dataset JSON.
 Imports: tidyverse, shiny, shinyWidgets, readr, DT 
+Encoding: UTF-8
