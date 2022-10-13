@@ -1,7 +1,7 @@
  
 
 #' read_ds_json
-#'@export 
+#'@export
 #'@param ds_jsonfile raw dataset json file 
 #'@return tibble with the ds json object
 #' 
